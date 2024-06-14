@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is home page</h1>
+    <h1>{{lst}}</h1>
+    <h1>{{ lst|join:", " }}</h1>
+    <h1>{{ lst|join:"-" }}</h1>
+    <h1>{{ lst|slice:":2" }}</h1>
+    <!-- Uppercase -->
+    <p>{{ author|upper }}</p>
+    <p>{{ author|lower }}</p>
+    <h1>{{ born | date:"D d M Y" }}</h1>
+    <h1>{{ born|date:"SHORT_DATE_FORMAT" }}</h1>
+    <h1>{{ born | date }}</h1>
+    <h1>{{ age | add:"5" }}</h1>
+    <h1>{{ lst | add:"['d','e','f']" }}</h1>
+    <h1>{{ author | capfirst }}</h1>
+    <h1>{{ course | cut:" " }}</h1>
+    <h1>{{ list | first }}</h1>
+    <h1>{{ list | last }}</h1>
+    <h1>{{ list | length }}</h1>
+    <h1>{{ list| linenumbers }}</h1>
+    <h1>{{ lst | random }}</h1>
+
+</body>
+</html>
